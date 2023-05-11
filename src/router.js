@@ -25,6 +25,12 @@ const routes = [
 		name: 'PageNotFound',
 		component: PageNotFound,
 	},
+	{
+		path: '/auth/:provider/callback',
+		component: {
+		template: '<div class="auth-component"></div>'
+		}
+	},
 ];
 
 const router = createRouter({
