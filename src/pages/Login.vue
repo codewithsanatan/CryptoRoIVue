@@ -6,6 +6,7 @@
                     <div>
                         <h3>Welcome to Login Page</h3>
                         <p>Your message has been sent!</p>
+                        <p>{{ $store.state.postData }}</p>
                         <router-link to="/" class="primary-hover"> Go Home</router-link>
                     </div>
                     <!-- <div>

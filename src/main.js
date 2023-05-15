@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import store from './store'
 import router from './router' // <---
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -12,5 +13,6 @@ app.use(VueAxios, axios);
 app.use(vue3GoogleLogin, {
   clientId: import.meta.env.VITE_GOOGLE_CLIENT_ID
 })
+app.use(store)
 app.use(router);
 app.mount('#app');
